@@ -1,18 +1,8 @@
-# Linux.com Kubernetes CI/CD Blog Series by Kenzan
+# A simple Kubernetes CI/CD Deployment.
 
-The kubernetes-ci-cd project is [Kenzan's](https://kenzan.com/) crossword puzzle application that runs as several containers in Kubernetes (we call it the Kr8sswordz Puzzle). It showcases Kubernetes features like spinning up multiple pods and running a load test at scale. It also features Jenkins running on its own a container and a JenkinsFile script to demonstrate how Kubernetes can be integrated into a full CI/CD pipeline.
+This basic kubernetes-ci-cd project is a crossword puzzle application that runs as several containers in Kubernetes (we call it the Kr8sswordz Puzzle). It showcases Kubernetes features like spinning up multiple pods and running a load test at scale. It also features Jenkins running on its own in a container and a JenkinsFile script to demonstrate how Kubernetes can be integrated into a full CI/CD pipeline.
 
-To get it up and running, see the following week-by-week Linux.com blog posts, or simply follow the directions below.
-
-[Linux.com Part 1](https://www.linux.com/blog/learn/chapter/Intro-to-Kubernetes/2017/5/set-cicd-pipeline-kubernetes-part-1-overview)
-
-[Linux.com Part 2](https://www.linux.com/blog/learn/chapter/Intro-to-Kubernetes/2017/6/set-cicd-pipeline-jenkins-pod-kubernetes-part-2)
-
-[Linux.com Part 3](https://www.linux.com/blog/learn/chapter/intro-to-kubernetes/2017/6/run-and-scale-distributed-crossword-puzzle-app-cicd-kubernetes-part-3)
-
-[Linux.com Part 4](https://www.linux.com/blog/learn/chapter/intro-to-kubernetes/2017/6/set-cicd-distributed-crossword-puzzle-app-kubernetes-part-4)
-
-To generate this readme: `node readme.js`
+Simply follow the directions below to get this up and running.
 
 ## Prerequisites
 
@@ -450,36 +440,3 @@ After it triggers, observe how the puzzle services disappear in the Kr8sswordz P
 #### Step13
 
 Try clicking Submit to test that hits now register as white.
-
-
-## Automated Scripts to Run Tutorial
-
-If you need to walk through the steps in the tutorial again (or more quickly), we’ve provided npm scripts that automate running the same commands in the separate parts of the Tutorial.
-
-- Install NodeJS.
-- Install the scripts.
-    - `cd ~/kubernetes-ci-cd`
-    - `npm install`
-
-Begin the desired section:
-
-- `npm run part1`
-- `npm run part2`
-- `npm run part3`
-- `npm run part4`
-
-## LICENSE
-
-Copyright 2017 Kenzan, LLC <http://kenzan.com>
- 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
